@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import './login.css'
 
 const LoginForm: React.FC = () => {
-    const [signIn, setSignIn] = useState<boolean>(true);
+    const [signIn,   setSignIn] = useState<boolean>(true);
 
     const handleTabChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setSignIn(event.target.id === 'tab-1');
     };
 
     return (
+        <div className="loginbg">
         <div className="login-wrap">
             <div className="login-html">
                 <input
@@ -77,6 +78,7 @@ const LoginForm: React.FC = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 };
