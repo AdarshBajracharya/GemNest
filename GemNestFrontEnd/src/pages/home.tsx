@@ -14,9 +14,6 @@ const HomePage: React.FC = () => {
     return (
         <>
 
-            <div className="offcanvas-menu-overlay" />
-
-            {/* Offcanvas Menu End */}
             {/* Header Section Begin */}
             <header className="header">
                 <div className="container">
@@ -32,133 +29,23 @@ const HomePage: React.FC = () => {
                             <nav className="header__menu mobile-menu">
                                 <ul>
                                     <li className="active">
-                                        <a href="./index.html">Home</a>
+                                        <a href="/">Home</a>
                                     </li>
                                     <li>
-                                        <a href="./shop.html">Shop</a>
+                                        <a href="/shop">Shop</a>
                                     </li>
                                     <li>
-                                        <a href="#">Pages</a>
-                                        <ul className="dropdown">
-                                            <li>
-                                                <a href="./about.html">About Us</a>
-                                            </li>
-                                            <li>
-                                                <a href="./shop-details.html">Shop Details</a>
-                                            </li>
-                                            <li>
-                                                <a href="./shopping-cart.html">Shopping Cart</a>
-                                            </li>
-                                            <li>
-                                                <a href="./checkout.html">Check Out</a>
-                                            </li>
-                                            <li>
-                                                <a href="./blog-details.html">Blog Details</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="./blog.html">Blog</a>
-                                    </li>
-                                    <li>
-                                        <a href="./contact.html">Contacts</a>
+                                        <a href="/admin">Pages</a>
                                     </li>
                                 </ul>
                             </nav>
                         </div>
-                        <div className="col-lg-3 col-md-3">
-                            <div className="header__nav__option">
-                                <a href="#" className="search-switch">
-                                    <img src="img/icon/search.png" alt="" />
-                                </a>
-                                <a href="#">
-                                    <img src="img/icon/heart.png" alt="" />
-                                </a>
-                                <a href="#">
-                                    <img src="img/icon/cart.png" alt="" /> <span>0</span>
-                                </a>
-                                <div className="price">$0.00</div>
-                            </div>
-                        </div>
+
                     </div>
-                    <div className="canvas__open">
-                        <i className="fa fa-bars" />
-                    </div>
+
                 </div>
             </header>
             {/* Header Section End */}
-            {/* Hero Section Begin */}
-            <section className="hero">
-                <div className="hero__slider owl-carousel">
-                    <div className="hero__items heronumber1 set-bg" data-setbg="img/hero/hero-1.jpg">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-xl-5 col-lg-7 col-md-8">
-                                    <div className="hero__text">
-                                        <h6>Summer Collection</h6>
-                                        <h2>Fall - Winter Collections 2030</h2>
-                                        <p>
-                                            A specialist label creating luxury essentials. Ethically
-                                            crafted with an unwavering commitment to exceptional quality.
-                                        </p>
-                                        <a href="#" className="primary-btn">
-                                            Shop now <span className="arrow_right" />
-                                        </a>
-                                        <div className="hero__social">
-                                            <a href="#">
-                                                <i className="fa fa-facebook" />
-                                            </a>
-                                            <a href="#">
-                                                <i className="fa fa-twitter" />
-                                            </a>
-                                            <a href="#">
-                                                <i className="fa fa-pinterest" />
-                                            </a>
-                                            <a href="#">
-                                                <i className="fa fa-instagram" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="hero__items heronumber2 set-bg" data-setbg="img/hero/hero-2.jpg">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-xl-5 col-lg-7 col-md-8">
-                                    <div className="hero__text">
-                                        <h6>Summer Collection</h6>
-                                        <h2>Fall - Winter Collections 2030</h2>
-                                        <p>
-                                            A specialist label creating luxury essentials. Ethically
-                                            crafted with an unwavering commitment to exceptional quality.
-                                        </p>
-                                        <a href="#" className="primary-btn">
-                                            Shop now <span className="arrow_right" />
-                                        </a>
-                                        <div className="hero__social">
-                                            <a href="#">
-                                                <i className="fa fa-facebook" />
-                                            </a>
-                                            <a href="#">
-                                                <i className="fa fa-twitter" />
-                                            </a>
-                                            <a href="#">
-                                                <i className="fa fa-pinterest" />
-                                            </a>
-                                            <a href="#">
-                                                <i className="fa fa-instagram" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            {/* Hero Section End */}
             {/* Banner Section Begin */}
             <section className="banner spad">
                 <div className="container">
@@ -638,241 +525,11 @@ const HomePage: React.FC = () => {
                 </div>
             </section>
             {/* Product Section End */}
-            {/* Categories Section Begin */}
-            <section className="categories spad">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-3">
-                            <div className="categories__text">
-                                <h2>
-                                    Clothings Hot <br /> <span>Shoe Collection</span> <br />{" "}
-                                    Accessories
-                                </h2>
-                            </div>
-                        </div>
-                        <div className="col-lg-4">
-                            <div className="categories__hot__deal">
-                                <img src="img/product-sale.png" alt="" />
-                                <div className="hot__deal__sticker">
-                                    <span>Sale Of</span>
-                                    <h5>$29.99</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 offset-lg-1">
-                            <div className="categories__deal__countdown">
-                                <span>Deal Of The Week</span>
-                                <h2>Multi-pocket Chest Bag Black</h2>
-                                <div className="categories__deal__countdown__timer" id="countdown">
-                                    <div className="cd-item">
-                                        <span>3</span>
-                                        <p>Days</p>
-                                    </div>
-                                    <div className="cd-item">
-                                        <span>1</span>
-                                        <p>Hours</p>
-                                    </div>
-                                    <div className="cd-item">
-                                        <span>50</span>
-                                        <p>Minutes</p>
-                                    </div>
-                                    <div className="cd-item">
-                                        <span>18</span>
-                                        <p>Seconds</p>
-                                    </div>
-                                </div>
-                                <a href="#" className="primary-btn">
-                                    Shop now
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            {/* Categories Section End */}
-            {/* Instagram Section Begin */}
-            <section className="instagram spad">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-8">
-                            <div className="instagram__pic">
-                                <div
-                                    className="instagram__pic__item set-bg"
-                                    data-setbg="img/instagram/instagram-1.jpg"
-                                />
-                                <div
-                                    className="instagram__pic__item set-bg"
-                                    data-setbg="img/instagram/instagram-2.jpg"
-                                />
-                                <div
-                                    className="instagram__pic__item set-bg"
-                                    data-setbg="img/instagram/instagram-3.jpg"
-                                />
-                                <div
-                                    className="instagram__pic__item set-bg"
-                                    data-setbg="img/instagram/instagram-4.jpg"
-                                />
-                                <div
-                                    className="instagram__pic__item set-bg"
-                                    data-setbg="img/instagram/instagram-5.jpg"
-                                />
-                                <div
-                                    className="instagram__pic__item set-bg"
-                                    data-setbg="img/instagram/instagram-6.jpg"
-                                />
-                            </div>
-                        </div>
-                        <div className="col-lg-4">
-                            <div className="instagram__text">
-                                <h2>Instagram</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <h3>#Male_Fashion</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            {/* Instagram Section End */}
-            {/* Latest Blog Section Begin */}
-            <section className="latest spad">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <div className="section-title">
-                                <span>Latest News</span>
-                                <h2>Fashion New Trends</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-lg-4 col-md-6 col-sm-6">
-                            <div className="blog__item">
-                                <div
-                                    className="blog__item__pic set-bg"
-                                    data-setbg="img/blog/blog-1.jpg"
-                                />
-                                <div className="blog__item__text">
-              <span>
-                <img src="img/icon/calendar.png" alt="" /> 16 February 2020
-              </span>
-                                    <h5>What Curling Irons Are The Best Ones</h5>
-                                    <a href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6">
-                            <div className="blog__item">
-                                <div
-                                    className="blog__item__pic set-bg"
-                                    data-setbg="img/blog/blog-2.jpg"
-                                />
-                                <div className="blog__item__text">
-              <span>
-                <img src="img/icon/calendar.png" alt="" /> 21 February 2020
-              </span>
-                                    <h5>Eternity Bands Do Last Forever</h5>
-                                    <a href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6">
-                            <div className="blog__item">
-                                <div
-                                    className="blog__item__pic set-bg"
-                                    data-setbg="img/blog/blog-3.jpg"
-                                />
-                                <div className="blog__item__text">
-              <span>
-                <img src="img/icon/calendar.png" alt="" /> 28 February 2020
-              </span>
-                                    <h5>The Health Benefits Of Sunglasses</h5>
-                                    <a href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            {/* Latest Blog Section End */}
+
+
+
             {/* Footer Section Begin */}
             <footer className="footer">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-3 col-md-6 col-sm-6">
-                            <div className="footer__about">
-                                <div className="footer__logo">
-                                    <a href="#">
-                                        <img src="img/footer-logo.png" alt="" />
-                                    </a>
-                                </div>
-                                <p>
-                                    The customer is at the heart of our unique business model, which
-                                    includes design.
-                                </p>
-                                <a href="#">
-                                    <img src="img/payment.png" alt="" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
-                            <div className="footer__widget">
-                                <h6>Shopping</h6>
-                                <ul>
-                                    <li>
-                                        <a href="#">Clothing Store</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Trending Shoes</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Accessories</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Sale</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="col-lg-2 col-md-3 col-sm-6">
-                            <div className="footer__widget">
-                                <h6>Shopping</h6>
-                                <ul>
-                                    <li>
-                                        <a href="#">Contact Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Payment Methods</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Delivary</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Return &amp; Exchanges</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
-                            <div className="footer__widget">
-                                <h6>NewLetter</h6>
-                                <div className="footer__newslatter">
-                                    <p>
-                                        Be the first to know about new arrivals, look books, sales &amp;
-                                        promos!
-                                    </p>
-                                    <form action="#">
-                                        <input type="text" placeholder="Your email" />
-                                        <button type="submit">
-                                            <span className="icon_mail_alt" />
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div className="row">
                         <div className="col-lg-12 text-center">
                             <div className="footer__copyright__text">
@@ -888,7 +545,7 @@ const HomePage: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+
             </footer>
             {/* Footer Section End */}
             {/* Search Begin */}
@@ -900,8 +557,7 @@ const HomePage: React.FC = () => {
                     </form>
                 </div>
             </div>
-            {/* Search End */}
-            {/* Js Plugins */}
+
         </>
 
 
