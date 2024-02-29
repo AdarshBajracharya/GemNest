@@ -65,13 +65,12 @@ function ProductAddTable() {
                         <label className='productlabel'>Category:</label>
                         <select className='inputforproduct' name="category" value={category} onChange={handleChange}>
                             <option value="">Select a category</option>
-                            <option value="Men">Men</option>
-                            <option value="Women">Women</option>
-                            <option value="Ruched">Ruched</option>
-                            <option value="Short">Short</option>
-                            <option value="Slit">Slit</option>
-                            <option value="Long">Long</option>
-                            <option value="Backless">Backless</option>
+                            <option value="Chain">Chain</option>
+                            <option value="Necklace">Necklace</option>
+                            <option value="Ring">Ring</option>
+                            <option value="Ear Ring">Ear Ring</option>
+                            <option value="Gem">Gem</option>
+                            <option value="Grills">Grills</option>
                         </select>
                         <label className='productlabel'>Image URL:</label>
                         <input className='inputforproduct' name="imageUrl"  value={imageUrl} onChange={handleChange} type="text" />

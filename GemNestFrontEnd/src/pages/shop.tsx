@@ -1,13 +1,14 @@
 import React, {useEffect, useState} from 'react';
-import './css/bootstrap.min.css';
-import './css/font-awesome.min.css';
-import './css/elegant-icons.css';
-import './css/magnific-popup.css';
-import './css/nice-select.css';
-import './css/owl.carousel.min.css';
-import './css/slicknav.min.css';
+// import './css/bootstrap.min.css';
+// import './css/font-awesome.min.css';
+// import './css/elegant-icons.css';
+// import './css/magnific-popup.css';
+// import './css/nice-select.css';
+// import './css/owl.carousel.min.css';
+// import './css/slicknav.min.css';
 import './css/style.css';
 import {useNavigate} from "react-router-dom";
+import logo from "./img/logo.png";
 
 
 
@@ -111,22 +112,22 @@ const Shop = () => {
                     <div className="row">
                         <div className="col-lg-3 col-md-3">
                             <div className="header__logo">
-                                <a href="./index.html">
-                                    <img src="img/logo.png" alt="" />
+                                <a href="/home">
+                                    <img src={logo} width={70} height={50} alt="" />
                                 </a>
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-6">
                             <nav className="header__menu mobile-menu">
                                 <ul>
-                                    <li className="active">
+                                    <li>
                                         <a href="/">Home</a>
                                     </li>
-                                    <li>
+                                    <li className="active">
                                         <a href="/shop">Shop</a>
                                     </li>
                                     <li>
-                                        <a href="/admin">Pages</a>
+                                        <a href="/admin">Admin</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -137,14 +138,12 @@ const Shop = () => {
 
             <div className="bg-pro">
                 <div className="categories">
-                    <button className="cteg-btn" onClick={() => setSelectedCategory('men')}>Men</button>
-                    <button className="cteg-btn" onClick={() => setSelectedCategory('women')}>Women</button>
-                    <button className="cteg-btn" onClick={() => setSelectedCategory('cosmetics')}>Cosmetics</button>
-                    <button className="cteg-btn" onClick={() => setSelectedCategory('ruched')}>Ruched</button>
-                    <button className="cteg-btn" onClick={() => setSelectedCategory('short')}>Short</button>
-                    <button className="cteg-btn" onClick={() => setSelectedCategory('slit')}>Slit</button>
-                    <button className="cteg-btn" onClick={() => setSelectedCategory('long')}>Long</button>
-                    <button className="cteg-btn" onClick={() => setSelectedCategory('backless')}>Backless</button>
+                    <button className="cteg-btn" onClick={() => setSelectedCategory('Chain')}>Chain</button>
+                    <button className="cteg-btn" onClick={() => setSelectedCategory('Necklace')}>Necklace</button>
+                    <button className="cteg-btn" onClick={() => setSelectedCategory('Ring')}>Ring</button>
+                    <button className="cteg-btn" onClick={() => setSelectedCategory('Ear Ring')}>Ear Ring</button>
+                    <button className="cteg-btn" onClick={() => setSelectedCategory('Gem')}>Gem</button>
+                    <button className="cteg-btn" onClick={() => setSelectedCategory('Grills')}>Grills</button>
                     <button className="cteg-btn" onClick={() => setSelectedCategory(null)}>All</button>
                 </div>
 

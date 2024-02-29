@@ -43,7 +43,7 @@ const UpdatePro: React.FC = () => {
   };
 
   const handleCategoryChange = (e: React.ChangeEvent<HTMLSelectElement>) => setCategory(e.target.value);
-  const handleDescriptionChange = (e: React.ChangeEvent<HTMLInputElement>) => setDescription(e.target.value);
+  const handleDescriptionChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => setDescription(e.target.value);
 
   const handleUpdateClick = () => {
     const updatedData = {
@@ -54,7 +54,6 @@ const UpdatePro: React.FC = () => {
       description: description,
       imageUrl: imageUrl,
     };
-
 
     fetch(`http://localhost:8080/item/update`, {
       method: 'PUT',
@@ -70,7 +69,6 @@ const UpdatePro: React.FC = () => {
           return response.json();
         })
         .then(data => {
-
           console.log('Update successful:', data);
         })
         .catch(error => {
@@ -79,66 +77,66 @@ const UpdatePro: React.FC = () => {
   };
 
   return (
-      <>
-        <div className="addupdel-bg">
-          <div className="add-holder">
-            <div className="name-div">
-              <label>Name:</label>
+      <div className="addupdel-bg">
+        <div className="add-holder">
+          <div className="form-group">
+            <label>Name:</label>
+            <div className="input-group">
               <input
-                  style={{ width: 600, backgroundColor: "white", color: "black", height: 30, borderColor:'white', marginLeft:47}}
+                  className="form-control"
                   value={name}
                   onChange={handleNameChange}
               />
-              <button onClick={handleSearchClick}>Search</button>
+              <button className="btn btn-primary" onClick={handleSearchClick}>Search</button>
             </div>
-
-            <div className="pri-cat">
-              <label>Price:</label>
-              <div className="proro">
-                <input
-                    style={{ width: 250, backgroundColor: "white", color: "black" ,height: 30, borderColor:'white', marginLeft:55}}
-                    value={price}
-                    onChange={handlePriceChange}
-                />
-                <label style={{marginLeft:20}}>Category:</label>
-                <select
-                    style={{ width: 225, backgroundColor: "white", color: "black" ,height: 30, borderColor:'white', marginLeft:15}}
-                    value={category}
-                    onChange={handleCategoryChange}
-                >
-                  <option>Dumbbells</option>
-                  <option>Treadmill</option>
-                  <option>Home Gyms</option>
-                  <option>Jump Ropes</option>
-                  <option>Exercise Bikes</option>
-                  <option>Rowing Machines</option>
-                  <option>Pull Up and Push Up Bar</option>
-                  <option>Core and Abdominal Trainers</option>
-                </select>
-              </div>
-            </div>
-            <div className="des-div">
-              <label>Description:</label>
-              <input
-                  style={{ width: 600, height: 250, backgroundColor: "white", color: "black", borderColor:'white'}}
-                  value={description}
-                  onChange={handleDescriptionChange}
-              />
-            </div>
-            <div className="img-boxx" style={{display:"flex", }}>
-              <label>Image URL:</label>
-              <input
-                  style={{ width: 600, backgroundColor: "white", color: "black", height: 30, borderColor:'white', marginLeft:28 }}
-                  name="imageUrl"
-                  value={imageUrl}
-                  onChange={handlePriceChange}
-              />
-            </div>
-            <button className="add-pro-btn" onClick={handleUpdateClick}>Update</button>
-
           </div>
+
+          <div className="form-group">
+            <label>Price:</label>
+            <input
+                className="form-control"
+                type="number"
+                value={price}
+                onChange={handlePriceChange}
+            />
+            <label>Category:</label>
+            <select
+                className="form-control"
+                value={category}
+                onChange={handleCategoryChange}
+            >
+              <option value="">Select a category</option>
+              <option value="Chain">Chain</option>
+              <option value="Necklace">Necklace</option>
+              <option value="Ring">Ring</option>
+              <option value="Ear Ring">Ear Ring</option>
+              <option value="Gem">Gem</option>
+              <option value="Grills">Grills</option>
+            </select>
+          </div>
+
+          <div className="form-group">
+            <label>Description:</label>
+            <textarea
+                className="form-control"
+                value={description}
+                onChange={handleDescriptionChange}
+            />
+          </div>
+
+          <div className="form-group">
+            <label>Image URL:</label>
+            <input
+                className="form-control"
+                name="imageUrl"
+                value={imageUrl}
+                onChange={handlePriceChange}
+            />
+          </div>
+
+          <button className="btn btn-success" onClick={handleUpdateClick}>Update</button>
         </div>
-      </>
+      </div>
   );
 };
 
