@@ -391,8 +391,21 @@ ol {
 }
 
 
-.blog {
-	padding-bottom: 55px;
+.view-all {
+	text-decoration: none;
+	color: #333;
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	padding: 10px 20px;
+	background-color: #f0f0f0;
+	border: 2px solid #333;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+
+.view-all:hover {
+	background-color: #333; /* Change background color on hover */
+	color: #fff; /* Change text color on hover */
 }
 
 .banner__item {

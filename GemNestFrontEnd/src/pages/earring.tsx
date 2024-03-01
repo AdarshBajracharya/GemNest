@@ -160,7 +160,7 @@ const Shopear = () => {
                     ))}
                 </div>
 
-                <a href="/shop"> View all products</a>
+                <a href="/shop" className="view-all"> View all products</a>
             </div>
         </>
     );

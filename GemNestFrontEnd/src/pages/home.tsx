@@ -176,6 +176,8 @@ import {useNavigate} from "react-router-dom";
 
             <section className="product spad">
 
+                <h3 style={{marginLeft:'650px'}}> <b>Latest Products</b> </h3>
+
                 <div className="pro-dis" style={{display: 'flex', flexWrap: 'wrap', width: '100%', color: 'black'}}>
                     {products.map((product) => (
                         <ProductCard key={product.id} product={product} onViewClick={handleViewClick} />
