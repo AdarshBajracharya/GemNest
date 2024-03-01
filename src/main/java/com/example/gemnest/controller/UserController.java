@@ -1,7 +1,5 @@
 package com.example.gemnest.controller;
 
-
-//import com.example.prettyfeels.controller.Authentication.OtpEmailSender;
 import com.example.gemnest.dto.UserForgetPasswordDTO;
 import com.example.gemnest.entity.User;
 import com.example.gemnest.dto.UserDTO;
