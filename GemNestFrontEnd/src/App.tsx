@@ -11,12 +11,9 @@ import Shopneck from "./pages/necklace.tsx";
 
 const router = createBrowserRouter(
     [
+
         {
             path:"/",
-            element : <HomePage />
-        },
-        {
-            path:"/login",
             element:<LoginForm/>
         },
         {
