@@ -128,6 +128,12 @@ import {useNavigate} from "react-router-dom";
                 </div>
             </header>
 
+            <section className="hero-slider">
+                <h1 className="textttt">Make yourself shine</h1>
+                <br/>
+                <a href="/shop" className="primary-btn">See More</a>
+            </section>
+
             <section className="banner spad">
                 <div className="container">
                     <div className="row">
@@ -138,7 +144,7 @@ import {useNavigate} from "react-router-dom";
                                 </div>
                                 <div className="banner__item__text">
                                     <h2> Rings</h2>
-                                    <a href="#">Shop now</a>
+                                    <a href="/shopr">Shop now</a>
                                 </div>
                             </div>
                         </div>
@@ -149,7 +155,7 @@ import {useNavigate} from "react-router-dom";
                                 </div>
                                 <div className="banner__item__text">
                                     <h2>Browse Necklaces</h2>
-                                    <a href="#">Shop now</a>
+                                    <a href="/shopn">Shop now</a>
                                 </div>
                             </div>
                         </div>
@@ -160,7 +166,7 @@ import {useNavigate} from "react-router-dom";
                                 </div>
                                 <div className="banner__item__text">
                                     <h2>Browse Ear Rings</h2>
-                                    <a href="#">Shop now</a>
+                                    <a href="/shope">Shop now</a>
                                 </div>
                             </div>
                         </div>

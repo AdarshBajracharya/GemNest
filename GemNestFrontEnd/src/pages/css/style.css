@@ -381,10 +381,15 @@ ol {
 	display: none;
 }
 
+.hero-slider{
+	height: 100vh;
+	background-image: url("../img/ban1.jpg");
+	text-align: center;
+	background-size: cover;
+	padding: 300px;
 
-/*---------------------
-  Banner
------------------------*/
+}
+
 
 .blog {
 	padding-bottom: 55px;
