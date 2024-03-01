@@ -121,7 +121,7 @@ const Shop = () => {
                             <nav className="header__menu mobile-menu">
                                 <ul>
                                     <li>
-                                        <a href="/">Home</a>
+                                        <a href="/home">Home</a>
                                     </li>
                                     <li className="active">
                                         <a href="/shop">Shop</a>

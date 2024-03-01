@@ -111,7 +111,7 @@ import {useNavigate} from "react-router-dom";
                             <nav className="header__menu mobile-menu">
                                 <ul>
                                     <li className="active">
-                                        <a href="/">Home</a>
+                                        <a href="/home">Home</a>
                                     </li>
                                     <li>
                                         <a href="/shop">Shop</a>
